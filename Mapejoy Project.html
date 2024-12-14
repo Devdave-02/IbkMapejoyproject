@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .header{
+       height: 60px;
+       background-color: rgb(3, 191, 75);
+       color: white;
+       
+
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       align-items: center;
+       -webkit-box-pack: justify;
+
+
+       position: fixed;
+       top: 0;
+       left: 0;
+       right: 0; 
+       margin-bottom: 50px;
+       padding-top: 1em;
+       padding-right: 9em;
+       padding-bottom: 1em;
+       padding-left: 9em;
+
+      }
+       .header-logo{
+        color: white;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        box-sizing: none;
+        list-style: none;
+       }
+       .header-logo-img{
+        width: auto;
+        height: 80px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+
+       }
+        .header-home{
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        box-sizing: border-box;
+        font-family: "Nunito Sans", sans-serif;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        cursor: pointer;
+        font-size: 20px;
+        }
+      
+        .header-AboutUs{
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        box-sizing: border-box;
+        font-family: "Nunito Sans", sans-serif;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        cursor: pointer;
+        font-size: 20px;
+        }
+        .header-Invest{
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        box-sizing: border-box;
+        font-family: "Nunito Sans", sans-serif;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        cursor: pointer;
+        font-size: 20px;
+
+        }
+        .header-Gallery{
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        box-sizing: border-box;
+        font-family: "Nunito Sans", sans-serif;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        cursor: pointer;
+        font-size: 20px;
+
+
+        }
+        .header-items{
+          display: flex;
+          width: 500px;
+         -webkit-box-pack: justify;
+          justify-content: space-between;
+          box-sizing: border-box;
+          margin-top: 0px;
+          margin-right: 0px;
+          margin-bottom: 0px;
+          margin-left: 0px;
+          padding-top: 0px;
+          padding-right: 0px;
+          padding-bottom: 0px;
+          padding-left: 0px;
+
+        }
+      .hero{
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        align-items: center;
+        padding-top: 7em;
+        color: #03bf4b;
+
+      }
+      .hero-container{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        color: rgb(3, 191, 75);
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        font-family: 'Nunito Sans', sans-serif;
+        box-sizing: border-box;
+        margin: auto;
+        list-style-position: initial;
+        list-style-image: initial;
+        list-style-type: none;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+      }
+      .hero-text{
+        font-size: 48px;
+        font-weight:900;
+        box-sizing: border-box;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 80px;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        text-align: justify;
+        scroll-behavior: smooth;
+        width: 84%;
+        
+        
+
+      }
+      .text-subtitle{
+        font-size: 14px;
+        line-height: 36px;
+        text-align: justify;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 90px;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+      }
+      .hero-image{
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        box-sizing: border-box;
+
+      }
+      .image-hero{
+        width: 25opx;
+        height: auto;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 10px;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+      }
+
+
+
+
+
+      .value-heading{
+        padding-top: 2cm;
+        background-color: #f1f8e9;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        box-sizing: border-box;
+
+
+      }
+      .text-view{
+        font-size: 48px;
+        text-align: center;
+        scroll-behavior: smooth;
+        font-weight: bold;
+        font-family: 'Fredoka One', cursive;
+         
+
+      }
+      .values-container{
+        width: 80%;
+        margin-top: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+        margin-left: auto;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        box-sizing: border-box;
+
+     }
+
+      .values-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        box-sizing: border-box;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+      
+
+      }
+      .value-zero{
+        text-align: center;
+        margin-left: 10px;
+        margin-left: 10px;
+       
+
+      }
+      .value-image{
+        width: 250px;
+        height: auto;
+
+      }
+      .value-text{
+        width: 70%;
+        margin: auto;
+        padding-bottom: 2em;
+      }
+
+      .contact{
+        display: flex;
+        height: 100vh
+        -webkit-box-align: center;
+        align-items: center;
+       -webkit-box-orient: vertical;
+       -webkit-box-direction: normal;
+        flex-direction: column;
+        margin-top: 1em;
+        margin-bottom: 0px;
+        background-color: white;
+      }
+  
+      .contact-header{
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        box-sizing: border-box;
+        font-family: 'Nunito Sans', sans-serif;
+      }
+.contact-text{
+        font-size: 48px;
+        font-family: 'Fredoka One', cursive;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        box-sizing: border-box;
+}
+
+.contact-container{
+  display: flex;
+ -webkit-box-pack:justify;
+ justify-content: space-between;
+ -webkit-box-align: center;
+ align-items: center;
+ width: 75%;
+ background-color: #03bf4b;
+ margin-top: 10px;
+ margin-bottom: 0px;
+ border-radius: 20px;
+ padding-top: 0px;
+ padding-right: 0px;
+ padding-bottom: 0px;
+ padding-left: 0px;
+ 
+ 
+ 
+      
+}
+.contact-wrapper{
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
+}
+      
+.contact-card{
+  display: flex;
+  margin-right: 1em;
+  margin-left: 1em;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
+
+}
+ .contact-icon{
+  font-size: 40px;
+  color: #fff;
+  width: 60px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  box-sizing: border-box;
+
+ }
+ .icon{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  
+ }
+
+ .text-location{
+  color: #fff;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  box-sizing: border-box;
+
+ }
+.text-header{
+  font-size: 23px;
+  font-weight: 900;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  font-family: 'Nunito Sans', sans-serif;
+}
+.text-words{
+  color: #fff;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.contact-image{
+  width: 50%;
+  box-sizing: border-box;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 70px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  
+  
+
+  
+
+}
+.image{
+  width: 100%;
+  border-top-right-radius: 20px;
+  height: 
+}
+
+.green-leave{
+  margin-bottom: 0px;
+}
+
+
+
+.footer{
+  background-color: #03bf4b;
+  height: 310px;
+  display: flex;
+ -webkit-box-pack: center;
+ justify-content: center;
+ -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  margin-top: -4px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+
+}
+
+.footer-logo{
+  text-align: center;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  box-sizing: border-box;
+}
+.footer-icons-container{
+  display:flex;
+  -webkit-box-pack: justify;
+  -webkit-box-align: center;
+  align-items:center; 
+  width: 100%;
+  box-sizing: border-box;
+  
+}
+.footer-icons-container hr{
+  width: 30%;
+  margin-left: 150px;
+  
+  
+}
+
+.footer-icons-wrapper{
+   display: flex;
+   -webkit-box-pack: justify;
+  -webkit-box-align: center;
+  justify-content: space-between;
+  align-items:center; 
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  list-style: none;
+  
+  
+
+}
+.footer-icons{
+  width: 50px;
+  height: 50px;
+  line-height: 46px;
+  text-align: center;
+  font-size: 16px;
+  display: block;
+  align-items: center;
+  
+}
+.footer-icon-edit{
+  display: inline-block;
+  font-size: 16px;
+  text-align: center;
+  height: 40px;
+  width: 30px;
+  align-items: center;
+  
+  
+  
+
+}
+.footer-copyright{
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+
+    
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="header-logo">
+        <img class="header-logo-img" src="Images/logo-mapejoy.png">
+      </div>
+        <div class="header-items">
+        <div class="header-home">Home</div>
+        <div class="header-AboutUs">About Us</div>
+        <div class="header-Invest">Invest</div>
+        <div class="header-Gallery">Gallery</div>
+        </div>
+    </div>
+
+<div>
+ <div class="hero"> 
+  <div class="hero-container">
+   <p class="hero-text">
+   Sponsor a farm, earn returns and empower 
+  farmers while at it.
+   </p>
+      <p class="text-subtitle">
+        We stimulate local milk production through lean circular system and will reduce milk production cost as well as 
+            meet the dairy industry quality standard.
+          </p>
+        </div>
+        <div class="hero-image">
+          <img class="image-hero" src="./Images/hero2.png">
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="value-heading">
+        <p class="text-view">MV views</p>
+        
+        <div class="values-container"> 
+          <div class="values-wrapper">
+            <div class="value-zero">
+              <img  class="value-image"  src="./Images/Zero 1.png">
+              <h3>
+                "Zero Hunger"
+              </h3>
+              <p class="value-text">
+                End hunger, achieve food security and 
+                improved nutrition and promote sustainable agriculture
+              </p>
+            </div>
+              <div class="value-zero">
+                <img  class="value-image"  src="./Images/Zero 2.png">
+                <h3>
+                  "Decent Work and Economic
+                  Growth"
+                </h3>
+                <p class="value-text">
+                  Promote Sustained, inclusive and 
+                  sustained economice growth,
+                  full and poeductive 
+                  employment and decent work for all
+                </p>
+          </div>
+          <div class="value-zero">
+            <img  class="value-image"  src="./Images/Zero 3.png">
+            <h3>
+              "Responsible consumption and production"
+            </h3>
+            <p class="value-text">
+              Ensure sustainable consumption and
+              production patterns
+            </p>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="contact">
+       <div class="contact-header"         >
+        <p class="contact-text">
+          Get in touch
+        </p>
+        <hr>
+        <hr>
+      </div>
+
+      <div class="contact-container">
+        <div  class="contact-wrapper">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <img class="icon" src="./Images/location-icon.png">
+            </div>
+             <div class="text-location">
+              <p class="text-header">
+                location
+              </p>
+               <p class="text-words">
+                Pastor Ajayi's quarters, Oke-ayo, Ogbooro,Oyo state Nigeria
+               </p>
+               </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">
+                <img class="icon" src="./Images/email image.png">
+              </div>
+              <div class="text-location">
+                <p class="text-header">
+                  Email Us
+                </p>
+                 <p class="text-words">
+                  info@mapejoyfarms.com
+                 </p>
+                 </div>
+              </div>
+
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <img class="icon" src="./Images/phone call image.png">
+                </div>
+                <div class="text-location">
+                  <p class="text-header">
+                    Phone
+                  </p>
+                   <p class="text-words">
+                     +234 805 985 6893
+                   </p>
+             </div>
+            </div>  
+          </div>
+          <div class="contact-image">
+            <img class="image" src="Images/contact image 2.jpg" alt="">
+           </div>
+    </div>
+     <div>
+      <div>
+        <img class="green-leave" src="./Images/contact image.png">
+      </div>
+     </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-logo">
+        <img src="Images/logo-mapejoy.png" alt="footer-logo">
+      </div>
+
+      <div class="footer-icons-container">
+        <hr>
+        <div class="footer-icons-wrapper">
+          <div class="footer-icon">
+            <img class="footer-icon-edit" src="Images/facebook-icon-png.webp">
+          </div> 
+          
+          <div class="footer-icon">
+            <img class="footer-icon-edit"  src="Images/Twitter icon.png">
+          </div> 
+
+          <div class="footer-icon">
+            <img  class="footer-icon-edit" src="Images/G.Icon.png">
+          </div> 
+
+          <div class="footer-icon">
+            <img class="footer-icon-edit" src="Images/facebook-icon-png.webp">
+          </div> 
+    </div>
+      <hr>
+    </div>
+      <p class="footer-copyright">
+        Copyright © 2020 AyoOluwa_Israel. All Rights Reserved.
+      </p>
+  </body>
+</html>
